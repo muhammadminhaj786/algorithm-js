@@ -58,19 +58,50 @@ function largestOfFour(arr) {
 
 largestOfFour([[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 857, 1]]);
 
-//Confirm the Ending algo
+// Confirm the Ending algo 
 function confirmEnding(str, target) {
-  var len = str.length
-  var newStr = str.split(" ")
-  for (let i=0;i<newStr.length;i++){
-    console.log(i)
-
-  } 
-  // if(str[len-1]==target){
-  //   return true
-  // }else{
-  //   return false
-  // }
+  var len = target.length
+  var len2 = str.length 
+  var newStr = str.slice(len2-len,len2)
+  if(newStr==target){
+    return true
+  }else{
+    return false
+  }
 }
 
-console.log(confirmEnding("Bastian jsd df same", "n"));
+console.log(confirmEnding("Bastian sasome", "some"));
+
+// Repeat a String Repeat a String algo 
+function repeatStringNumTimes(str, num) {
+  var newStr2 = ""
+  for (let i =0;i<num;i++){
+    newStr2 += str
+  }
+  return newStr2
+}
+
+console.log(repeatStringNumTimes("abc", 3));
+
+// Truncate a String algo 
+function truncateString(str, num) {
+  // Clear out that junk in your trunk
+  if (str.length > num) {
+    return str.slice(0, num) + "...";
+  } else {
+    return str;
+  }
+}
+truncateString("t basket",4)
+
+// Title Case a Sentence algo
+function titleCase(str) {
+  const newTitle = str.split(" ");
+  const updatedTitle = [];
+  for (let st in newTitle) {
+    updatedTitle[st] = newTitle[st][0].toUpperCase() + newTitle[st].slice(1).toLowerCase();
+  }
+  return updatedTitle.join(" ");
+}
+
+titleCase("I'm a little baby")
