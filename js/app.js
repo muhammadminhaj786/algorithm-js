@@ -105,3 +105,21 @@ function titleCase(str) {
 }
 
 titleCase("I'm a little baby")
+// Sum All Numbers in a Range algo
+function sumAll(arr) {
+    var temp=0
+    if(arr[0]>arr[1]){
+        var num = arr[0]
+        for(let i=1;i<=num;i++){
+            temp+=i
+        }
+    }else{
+        var num = arr[1]
+        for(let i=1;i<=num;i++){
+            temp+=i
+        }
+    }
+    return temp;
+}
+  
+console.log(sumAll([5, 10]));
