@@ -242,11 +242,12 @@ var new = 'string'
 
 //Quick sort
 const quickSort = arr => {
-  const a = [...arr];
-  if (a.length < 2) return a;
+    //use spread operator for copy array
+  const newArr = [...arr];
+  if (newArr.length < 2) return newArr;
   const pivotIndex = Math.floor(arr.length / 2);
-  const pivot = a[pivotIndex];
-  const [lo, hi] = a.reduce(
+  const pivot = newArr[pivotIndex];
+  const [lo, hi] = newArr.reduce(
     (acc, val, i) => {
       if (val < pivot || (val === pivot && i != pivotIndex)) {
         acc[0].push(val);
