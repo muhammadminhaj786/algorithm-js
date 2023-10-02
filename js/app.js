@@ -271,5 +271,6 @@ for (let i =1;i<number;i++){
     n2 = nextTerm
 }
 
-var n = 1;
+var n = 1
+ var n1 = 2;
 console.log(n)
