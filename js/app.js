@@ -274,3 +274,4 @@ for (let i =1;i<number;i++){
 var n = 1
  var n1 = 2;
 console.log(n)
+var b = n1
