@@ -41,6 +41,7 @@ var result2 = findLongestWordLength("May the force be with you");
 console.log(result2)
 
 var z = 90
+var y = 80;
 
 //Return Largest Numbers in Arrays algo
 function largestOfFour(arr) {
