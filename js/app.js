@@ -9,7 +9,7 @@ function factorialize(num) {
 var result = factorialize(5);
 console.log('result=>',result)
 
-var new1 = "new"
+var new1 = "old"
 console.log(new1) 
 //create palindrome algo
 // let str = https://github.com/muhammadminhaj786
