@@ -303,3 +303,11 @@ function removeDuplicateChar(str){
 }
 
 removeDuplicateChar('hi my name is name and name')
+
+//swap two variable without making 3
+let a = 5;
+let b = 10;
+
+a = a + b;
+b = a - b;
+a = a - b;
