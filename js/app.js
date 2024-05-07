@@ -208,7 +208,7 @@ function whatIsInAName(collection, source) {
   return collectionMatches;
 }
 
-Sum All Odd Fibonacci Numbers
+// Sum All Odd Fibonacci Numbers
 function sumFibs(num) {
   let prevNumber = 0;
   let currNumber = 1;
@@ -243,7 +243,7 @@ function rot13(str) {
 
 rot13("SERR PBQR PNZC!");
 
-var new = 'string'
+// var new = 'string'
 
 //Quick sort
 const quickSort = arr => {
@@ -268,7 +268,7 @@ const quickSort = arr => {
     
 //Fibonacci sequence
 let number = 10;
-let n1 = 0, n2 = 1, nextTerm;
+// let n1 = 0, n2 = 1, nextTerm;
 for (let i =1;i<number;i++){
     console.log(n1)
     nextTerm = n1 + n2
@@ -311,3 +311,26 @@ let b = 10;
 a = a + b;
 b = a - b;
 a = a - b;
+
+
+//find the second largest number in array
+let arr = [2,5,3,8]
+
+function secondMax(nums){
+    
+    let max1 = -Infinity
+    let max2= -Infinity
+
+
+for(var num of arr){
+    if(num > max1){
+        max2 = max1
+        max1 = num
+    }else if(num > max2){
+        max2 = num
+    }
+}
+    return max2
+}
+
+console.log(secondMax(arr))
