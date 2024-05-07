@@ -333,4 +333,4 @@ for(var num of arr){
     return max2
 }
 
-console.log(secondMax(arr))
+console.log(secondMax([2,5,3,8]))
