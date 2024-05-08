@@ -334,3 +334,41 @@ for(var num of arr){
 }
 
 console.log(secondMax([2,5,3,8]))
+
+function findRelativeRanks(score) {
+    // Create a copy of the score array to avoid modifying the original array
+    const sortedScores = [...score];
+    
+    // Sort the copy of the scores in descending order
+    sortedScores.sort((a, b) => b - a);
+    
+    // Map to store the rank for each score
+    const rankMap = new Map();
+    
+    // Determine the rank based on the sorted scores
+    for (let i = 0; i < sortedScores.length; i++) {
+        const rank = i + 1;
+        if (rank === 1) {
+            rankMap.set(sortedScores[i], "Gold Medal");
+        } else if (rank === 2) {
+            rankMap.set(sortedScores[i], "Silver Medal");
+        } else if (rank === 3) {
+            rankMap.set(sortedScores[i], "Bronze Medal");
+        } else {
+            rankMap.set(sortedScores[i], rank.toString());
+        }
+    }
+    
+    // Prepare the answer array based on the original scores
+    const answer = [];
+    for (let i = 0; i < score.length; i++) {
+        answer.push(rankMap.get(score[i]));
+    }
+    
+    return answer;
+}
+
+// Example usage:
+const score = [5, 4, 3, 2, 1];
+const result = findRelativeRanks(score);
+console.log(result);  // Output: ["Gold Medal", "Silver Medal", "Bronze Medal", "4", "5"]
