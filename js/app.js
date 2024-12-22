@@ -372,3 +372,9 @@ function findRelativeRanks(score) {
 const score = [5, 4, 3, 2, 1];
 const result = findRelativeRanks(score);
 console.log(result);  // Output: ["Gold Medal", "Silver Medal", "Bronze Medal", "4", "5"]
+
+let ten =0
+function dummyFoo(ten){
+    ten = 1
+}
+console.log(ten) 
