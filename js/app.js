@@ -9,6 +9,8 @@ function factorialize(num) {
 var result = factorialize(5);
 console.log('result=>',result)
 
+
+
 var new1 = "old"
 console.log(new1) 
 //create palindrome algo
@@ -268,6 +270,7 @@ const quickSort = arr => {
     
 //Fibonacci sequence
 let number = 10;
+let n2 ;
 // let n1 = 0, n2 = 1, nextTerm;
 for (let i =1;i<number;i++){
     console.log(n1)
@@ -306,11 +309,11 @@ removeDuplicateChar('hi my name is name and name')
 
 //swap two variable without making 3
 let a = 5;
-let b = 10;
+let be = 10;
 
-a = a + b;
-b = a - b;
-a = a - b;
+a = a + be;
+be = a - be;
+a = a - be;
 
 
 //find the second largest number in array
@@ -370,8 +373,8 @@ function findRelativeRanks(score) {
 
 // Example usage:
 const score = [5, 4, 3, 2, 1];
-const result = findRelativeRanks(score);
-console.log(result);  // Output: ["Gold Medal", "Silver Medal", "Bronze Medal", "4", "5"]
+// const result = findRelativeRanks(score);
+// console.log(result);  // Output: ["Gold Medal", "Silver Medal", "Bronze Medal", "4", "5"]
 
 let ten =0
 function dummyFoo(ten){
